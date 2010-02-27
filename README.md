@@ -42,4 +42,8 @@ PHP has a few characteristics that make it very appealing choice for this ugly c
 * PHP is reasonably fast
 * PHP is very easy to learn & use
 
-That being said, there is no reason you couldn't contribute workers for other languages. Check out lib/worker/php.php as a starting point if feel like enslaving your favorite language.
+That being said, there is no reason you couldn't contribute workers for other languages. Check out lib/worker/php.php as a starting point if you feel like enslaving your favorite language.
+
+## What about performance?
+
+I will publish some benchmarks when I find the time, meanwhile you can spawn multiple clients if you hit performance issues.
