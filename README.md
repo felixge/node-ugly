@@ -46,4 +46,16 @@ That being said, there is no reason you couldn't contribute workers for other la
 
 ## What about performance?
 
-I will publish some benchmarks when I find the time, meanwhile you can spawn multiple clients if you hit performance issues.
+Here are the results for stress testing print_r for 1 sec with 10 attempts:
+
+    print_r:
+      samples: 10
+      iterations per sample: 16.384
+      mean: 10.575 iterations / sec
+      median: 10.598 iterations / sec
+      standard deviation: +/-39 iterations / sec
+      coefficient of variation: 0.37%
+
+Benchmarks are tricky, but the results indicate that while the overhead of this solution is high, the performance should be sufficient for things like database access.
+
+(Test was run on a MacBook Pro: 2.66 Ghz Intel Core 2 Duo, 4GB 1067 MHz DDR3, OS 10.6.2)
