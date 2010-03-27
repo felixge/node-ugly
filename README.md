@@ -1,3 +1,5 @@
+**Works with node.js version:** [179f718d62c17c674a941a2539b81fee54152da5](http://github.com/ry/node/commit/179f718d62c17c674a941a2539b81fee54152da5)
+
 # Node Ugly
 
 Ugly is the worst foreign function interface ever created. Only use it in times of great despair.
