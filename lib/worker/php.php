@@ -28,7 +28,7 @@ class Worker {
       if ($fn == 'eval' || is_callable($fn)) {
         ob_start();
         if ($fn == 'eval') {
-          $val = eval('return '.$args[0]);
+          $val = eval($args[0]);
         } else {
           $val = call_user_func_array($fn, $args);
         }

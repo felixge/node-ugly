@@ -15,8 +15,8 @@ for (var i = 0; i < 10; i++) {
 }
 
 // This is pretty bad, even by ugly standards : )
-php.invoke('eval', 'new SimpleXMLElement("<test><hello>world</hello></test>");', function(e, r) {
-  php.invoke('eval', '$ref["'+r.reference+'"]->hello;', function(e, r) {
+php.invoke('eval', 'return new SimpleXMLElement("<test><hello>world</hello></test>");', function(e, r) {
+  php.invoke('eval', 'return $ref["'+r.reference+'"]->hello;', function(e, r) {
     assert.equal('world', r.val);
     xmlCallback = true;
     php.close();
